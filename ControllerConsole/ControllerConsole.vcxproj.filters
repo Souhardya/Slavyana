@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Display">
+      <UniqueIdentifier>{9bd83f2d-0594-4742-b7c5-dc1b4ee24b13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Init">
+      <UniqueIdentifier>{dadcffca-ac23-48aa-bb06-af1b518f0b2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Process">
+      <UniqueIdentifier>{a6fa9bcc-66d2-4ff3-acf0-ecf7eeffda28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Dispatch">
+      <UniqueIdentifier>{c958943d-22ed-4fa1-84b1-2555cd4a0b6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Install">
+      <UniqueIdentifier>{ebcb0a82-f634-40c7-9917-c5f8cfa2cebb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Remove">
+      <UniqueIdentifier>{ab841175-d431-4bd9-bedc-2e60c9ee7107}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Begin">
+      <UniqueIdentifier>{d4f3d43f-0ca1-44c3-a371-cda448fedd60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Stop">
+      <UniqueIdentifier>{4f6a1740-6309-475e-92f6-8f13646a50a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Debug">
+      <UniqueIdentifier>{af608579-5143-4e5d-8e52-904af72ed983}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Display">
+      <UniqueIdentifier>{e4b7601f-6c2e-4d30-8bad-ff8d2f8b8663}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Init">
+      <UniqueIdentifier>{1912eb02-facb-449b-a8c2-82cf6521055f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Process">
+      <UniqueIdentifier>{fab5527f-fab2-40f4-8abd-bd6f612471cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Dispatch">
+      <UniqueIdentifier>{3c3eb69a-a552-4127-924a-0adb36d7a8d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Install">
+      <UniqueIdentifier>{d7530eb0-1af2-4b2c-9291-c35f0dd0426a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Remove">
+      <UniqueIdentifier>{1ca18efb-cc01-431e-8830-d44a2f39e6fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Begin">
+      <UniqueIdentifier>{d86d9af4-9bf8-4b6a-b702-b6834c38a116}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Stop">
+      <UniqueIdentifier>{cb9f5243-12cc-4820-b4bc-716fd70ee660}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Debug">
+      <UniqueIdentifier>{13f07e1d-aaef-4c22-b01d-93fb580367af}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DisplayTools.cpp">
+      <Filter>Source Files\Display</Filter>
+    </ClCompile>
+    <ClCompile Include="Initalization.cpp">
+      <Filter>Source Files\Init</Filter>
+    </ClCompile>
+    <ClCompile Include="Privilege.cpp">
+      <Filter>Source Files\Init</Filter>
+    </ClCompile>
+    <ClCompile Include="VerifyFiles.cpp">
+      <Filter>Source Files\Init</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessTools.cpp">
+      <Filter>Source Files\Process</Filter>
+    </ClCompile>
+    <ClCompile Include="DispatchRoutine.cpp">
+      <Filter>Source Files\Dispatch</Filter>
+    </ClCompile>
+    <ClCompile Include="Install.cpp">
+      <Filter>Source Files\Install</Filter>
+    </ClCompile>
+    <ClCompile Include="Remove.cpp">
+      <Filter>Source Files\Remove</Filter>
+    </ClCompile>
+    <ClCompile Include="BeginSandBox.cpp">
+      <Filter>Source Files\Begin</Filter>
+    </ClCompile>
+    <ClCompile Include="StopSandBox.cpp">
+      <Filter>Source Files\Stop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DebugLog.cpp">
+      <Filter>Source Files\Debug</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Config\Config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DisplayTools.h">
+      <Filter>Header Files\Display</Filter>
+    </ClInclude>
+    <ClInclude Include="Initalization.h">
+      <Filter>Header Files\Init</Filter>
+    </ClInclude>
+    <ClInclude Include="Privilege.h">
+      <Filter>Header Files\Init</Filter>
+    </ClInclude>
+    <ClInclude Include="VerifyFiles.h">
+      <Filter>Header Files\Init</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessTools.h">
+      <Filter>Header Files\Process</Filter>
+    </ClInclude>
+    <ClInclude Include="DispatchRoutine.h">
+      <Filter>Header Files\Dispatch</Filter>
+    </ClInclude>
+    <ClInclude Include="Install.h">
+      <Filter>Header Files\Install</Filter>
+    </ClInclude>
+    <ClInclude Include="Remove.h">
+      <Filter>Header Files\Remove</Filter>
+    </ClInclude>
+    <ClInclude Include="BeginSandBox.h">
+      <Filter>Header Files\Begin</Filter>
+    </ClInclude>
+    <ClInclude Include="StopSandBox.h">
+      <Filter>Header Files\Stop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DebugLog.h">
+      <Filter>Header Files\Debug</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

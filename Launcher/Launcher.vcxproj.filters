@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Init">
+      <UniqueIdentifier>{0579e4b2-80b6-49aa-abe8-aa61b522a09d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Begin">
+      <UniqueIdentifier>{f6dfac59-80bf-41ce-b6c7-70595574ee58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Debug">
+      <UniqueIdentifier>{33b6a512-25aa-41d0-89a4-9d7e2f39bc09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Init">
+      <UniqueIdentifier>{c23107e5-4866-4151-8395-d3eb50195bcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Begin">
+      <UniqueIdentifier>{365c88f5-2811-49f5-897a-2b0fda0870b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Debug">
+      <UniqueIdentifier>{3f290c8c-7a1a-4cc6-9da8-3f2f348fe5cf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Initalization.cpp">
+      <Filter>Source Files\Init</Filter>
+    </ClCompile>
+    <ClCompile Include="Privilege.cpp">
+      <Filter>Source Files\Init</Filter>
+    </ClCompile>
+    <ClCompile Include="BeginHookPort.cpp">
+      <Filter>Source Files\Begin</Filter>
+    </ClCompile>
+    <ClCompile Include="BeginLauncher.cpp">
+      <Filter>Source Files\Begin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DebugLog.cpp">
+      <Filter>Source Files\Debug</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Config\Config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DllModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Initalization.h">
+      <Filter>Header Files\Init</Filter>
+    </ClInclude>
+    <ClInclude Include="Privilege.h">
+      <Filter>Header Files\Init</Filter>
+    </ClInclude>
+    <ClInclude Include="BeginHookPort.h">
+      <Filter>Header Files\Begin</Filter>
+    </ClInclude>
+    <ClInclude Include="BeginLauncher.h">
+      <Filter>Header Files\Begin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DebugLog.h">
+      <Filter>Header Files\Debug</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
