@@ -16,3 +16,22 @@ So tldr I created Slavayna to stand as my experimental sandbox ....
 - [x] VFS via hooking
 - [x] Virtual registry via hooking
 - [ ] Complex x64 support
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+The project should be pretty easy to compile unless you have no clue of what you doing 
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+* Visual studio 
+* Windows 7-10
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/Souhardya/Slavyana
+   ```
+2. Compile the solution files in the folders 
