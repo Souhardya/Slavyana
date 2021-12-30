@@ -107,8 +107,8 @@ void* __stdcall getkernel32modhandle()
 	//
 	//Get Module Handle of [kernel32.dll]
 	//
-	//(1) FS寄存器 -> TEB结构
-	//(2) TEB+0x30 -> PEB结构
+	//(1) FS -> TEB
+	//(2) TEB+0x30 -> PEB缁撴瀯
 	//(3) PEB+0x0c -> PEB_LDR_DATA
 	//(4) PEB_LDR_DATA+0x1c -> Ntdll.dll
 	//(5) Ntdll.dll+0x08 -> Kernel32.dll
@@ -118,22 +118,22 @@ void* __stdcall getkernel32modhandle()
 	//__asm
 	//{
 	//	push esi
-	//	mov eax, fs:0x30		//打开FS寄存器
-	//	mov eax, [eax + 0x0c]	//得到PEB结构地址
-	//	mov esi, [eax + 0x1c]	//得到PEB_LDR_DATA结构地址
+	//	mov eax, fs:0x30		
+	//	mov eax, [eax + 0x0c]	
+	//	mov esi, [eax + 0x1c]	
 	//	lodsd					//InInitializationOrderModuleList
-	//	mov eax, [eax + 0x08]	//得到BaseAddress，即kernel32.dll基址
+	//	mov eax, [eax + 0x08]	//BaseAddress锛宬ernel32.dll
 	//	pop esi
 	//}
 
 	__asm
 	{
 		push esi
-		mov eax, fs:0x30		//打开FS寄存器
-		mov eax, [eax + 0x0c]	//得到PEB结构地址
-		mov esi, [eax + 0x1c]	//得到PEB_LDR_DATA结构地址
+		mov eax, fs:0x30		//FS
+		mov eax, [eax + 0x0c]	//PEB
+		mov esi, [eax + 0x1c]	//PEB_LDR_DATA
 		lodsd					//InInitializationOrderModuleList
-		mov eax, [eax + 0x08]	//得到BaseAddress，即kernel32.dll基址
+		mov eax, [eax + 0x08]	//BaseAddress锛宬ernel32.dll
 		pop esi
 	}
 }
