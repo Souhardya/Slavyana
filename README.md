@@ -24,9 +24,11 @@ The project should be pretty easy to compile unless you have no clue of what you
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+This is an example of how to list things you need to use the software and how to install them or you can just use precompiled executables included in the project
+
 * Visual studio 
 * Windows 7-10
+
 
 ### Installation
 
