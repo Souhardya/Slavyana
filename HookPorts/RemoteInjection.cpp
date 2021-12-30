@@ -305,8 +305,8 @@ void * __stdcall shellcode_getkernel32modbase()
 	//
 	//Get [Module Base Address] of [kernel32.dll]
 	//
-	//(1) FS¼Ä´æÆ÷ -> TEB½á¹¹
-	//(2) TEB+0x30 -> PEB½á¹¹
+	//(1) FSå¯„å­˜å™¨ -> TEBç»“æž„
+	//(2) TEB+0x30 -> PEBç»“æž„
 	//(3) PEB+0x0c -> PEB_LDR_DATA
 	//(4) PEB_LDR_DATA+0x1c -> Ntdll.dll
 	//(5) Ntdll.dll+0x08 -> Kernel32.dll
@@ -348,11 +348,11 @@ void * __stdcall shellcode_getkernel32modbase()
 	//__asm
 	//{
 	//	push esi
-	//	mov eax, fs:0x30		//´ò¿ªFS¼Ä´æÆ÷
-	//	mov eax, [eax + 0x0c]	//µÃµ½PEB½á¹¹µØÖ·
-	//	mov esi, [eax + 0x1c]	//µÃµ½PEB_LDR_DATA½á¹¹µØÖ·
+	//	mov eax, fs:0x30		
+	//	mov eax, [eax + 0x0c]	
+	//	mov esi, [eax + 0x1c]	
 	//	lodsd					//InInitializationOrderModuleList
-	//	mov eax, [eax + 0x08]	//µÃµ½BaseAddress£¬¼´kernel32.dll»ùÖ·
+	//	mov eax, [eax + 0x08]	
 	//	pop esi
 	//}
 	//
@@ -375,11 +375,11 @@ void * __stdcall shellcode_getkernel32modbase()
 	__asm
 	{
 		push esi
-		mov eax, fs:0x30		//´ò¿ªFS¼Ä´æÆ÷
-		mov eax, [eax + 0x0c]	//µÃµ½PEB½á¹¹µØÖ·
-		mov esi, [eax + 0x1c]	//µÃµ½PEB_LDR_DATA½á¹¹µØÖ·
-		lodsd					//InInitializationOrderModuleList
-		mov eax, [eax + 0x08]	//µÃµ½BaseAddress£¬¼´kernel32.dll»ùÖ·
+		mov eax, fs:0x30		
+		mov eax, [eax + 0x0c]	
+		mov esi, [eax + 0x1c]	
+		lodsd					
+		mov eax, [eax + 0x08]	
 		pop esi
 	}
 }
