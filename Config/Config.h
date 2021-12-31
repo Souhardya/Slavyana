@@ -12,7 +12,7 @@
 //Install
 //
 #define CONF_SoftwareRegName L"Slavyana"
-#define CONF_SandBoxNameLength 16
+#define CONF_SandBoxNameLength 8
 
 
 
